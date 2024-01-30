@@ -10,9 +10,9 @@
     $row = mysqli_fetch_assoc($result);
 
     echo '<h2>Dias em que posso faltar</h2>';
-    echo'<a href="http://localhost/daprafaltar/form.php">
-        <div class="mais-container"><img src="assets/img/mais.png" class="mais" alt=""></div>
-    </a>';
+    // echo'<a href="http://localhost/daprafaltar/form.php">
+    //     <div class="mais-container"><img src="assets/img/mais.png" class="mais" alt=""></div>
+    // </a>';
     if($total == 0){
         echo '<h2>Você ainda não tem matérias cadastradas</h2>';
     }else{
@@ -43,6 +43,17 @@
             <?php
         }while($row = mysqli_fetch_assoc($result));
     }
+
+    echo '<div class="form ">
+        
+        <form class="materias-container" action="actionCreate.php" method="POST">
+            <input name="materia" class="input-cadastrar" placeholder="Matéria" type="text" required>
+            <input name="numeroAulas" class="input-cadastrar" type="number" placeholder="Total de aulas" required>
+            <input name="maximoFaltas" class="input-cadastrar" type="number" placeholder="Máximo de faltas" required>
+            <input type="submit" src="assets/img/mais.png" class="cadastrar-button" value="">        
+        </form>
+    </div>';
+    
     
     include 'footer.php';
 

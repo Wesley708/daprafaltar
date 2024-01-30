@@ -96,21 +96,18 @@ nav{
     /* justify-content: center; */
     align-items: center;
 }
-.form input, .form button{
-    width: 100%;
+.input-cadastrar{
+    width: auto;
     height: 40px;
     padding: 5px;
+    margin-left: 15px;
     font-size: 20px;
     border: none;
     border-radius: 3px;
 }
 .form{
-    height: 400px;
-    width: 500px;
-    background-color:rgba(73, 104, 132, 0.232);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    height: 70px;
+    margin-bottom: 30px;
     border-radius: 3px;
     }
 .form-container{
@@ -121,9 +118,7 @@ nav{
     justify-content: center;
 }.form form{
     height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    
 }
 .form h2{
     display: flex;
@@ -143,4 +138,25 @@ nav{
     position: fixed;
     bottom: 20px;
     right: 250px;
+}
+.cadastrar-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px solid rgba(12, 18, 12, 0.849);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    background-image: url(assets/img/mais.png);
+    background-position: center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+.cadastrar-button:hover{
+    cursor: pointer;
+}
+.cadastrar-button img{
+    height: 50px;
+    width: 50px;
 }
